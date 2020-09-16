@@ -18,5 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/user/{id}', 'UserController@show');
+
 Route::get('/login', 'AuthController@getLogin');
 Route::post('/post-login', 'AuthController@postLogin');
+Route::get('/register', 'AuthController@getRegister');
+Route::post('/post-register', 'AuthController@postRegister');
